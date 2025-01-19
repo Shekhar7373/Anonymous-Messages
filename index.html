@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Messages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message-card">
+            <div class="profile-header">
+                <div class="profile-pic"></div>
+                <div class="profile-info">
+                    <span class="username">@kingmaker</span>
+                    <span class="subtitle">send me anonymous messages!</span>
+                </div>
+            </div>
+            <div class="input-container">
+                <textarea
+                    id="messageInput"
+                    class="message-input"
+                    placeholder="send me anonymous messages..."
+                    onfocus="focusInput()"
+                    oninput="toggleSubmitButton()"
+                ></textarea>
+                <button class="emoji-button">😊</button>
+            </div>
+        </div>
+        <div id="anonymousLabel" class="anonymous-label">
+            🔒 anonymous q&a
+        </div>
+        <div class="tapped-count">
+            👇 378 people just tapped the button 👇
+        </div>
+        <button id="getOwnButton" class="action-button" onclick="getOwnMessages()">Get your own messages!</button>
+        <button
+            id="submitButton"
+            class="action-button hidden"
+            onclick="submitMessage()">Submit</button>
+        <div class="footer">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

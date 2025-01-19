@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#" class="back-button">←</a>
+    
+    <div class="success-container">
+        <div class="checkmark-circle">
+            <span class="checkmark">✓</span>
+        </div>
+        <div class="sent-text">Message Sent Successfully!</div>
+        
+        <div class="counter">
+            👆 Over 280 people just tapped the button! 👆
+        </div>
+
+        <a href="https://apps.apple.com/us/app/ngl-ask-me-anything/id1596550932?ppid=543cb167-5bdc-448f-a202-e5506f5d2837" 
+           class="get-app-button">
+            Get your own messages!
+        </a>
+
+        <a href="index.html" class="send-another">
+            Send another message
+        </a>
+    </div>
+
+    <script>
+        // Handle back button click
+        document.querySelector('.back-button').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.history.back();
+        });
+
+        // Handle "Send another message" click
+        document.querySelector('.send-another').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
